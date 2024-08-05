@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install Java
 sudo apt-get upgrade -y
-sudo apt-get update && apt-get -y install openjdk-17-jdk 
+sudo apt-get update && apt-get install openjdk-17-jdk -y
 curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
