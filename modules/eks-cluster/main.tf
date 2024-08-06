@@ -61,13 +61,21 @@ module "eks" {
   # aws-auth configmap
   manage_aws_auth_configmap = true
   #create_aws_auth_configmap = true
-
+  
   aws_auth_roles = [
     {
-      rolearn  = var.rolearn
-      username = "fusi"
+      rolearn  = "arn:aws:iam::211125488428:role/terraform-create-role"
+      username = "terraform-create-role"
       groups   = ["system:masters"]
-    },
+    }
+  ]
+
+  aws_auth_users = [
+    {
+      userarn  = "arn:aws:iam::211125488428:user/BandzzZ"
+      username = "BandzzZ"
+      groups   = ["system:masters"]
+    }
   ]
 
   tags = {

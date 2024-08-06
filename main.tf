@@ -79,13 +79,13 @@ module "aws_alb_controller" {
 # }
 
 
-# module "jenkins_server" {
-#   source        = "./modules/jenkins-server"
-#   ami_id        = var.ami_id
-#   instance_type = var.instance_type
-#   key_name      = var.key_name
-#   main-region   = var.main-region
-# }
+module "jenkins_server" {
+  source        = "./modules/jenkins-server"
+  ami_id        = var.ami_id
+  instance_type = var.instance_type
+  key_name      = var.key_name
+  main-region   = var.main-region
+}
 
 module "terraform_node" {
   source        = "./modules/terraform_node"
