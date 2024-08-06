@@ -48,11 +48,11 @@ variable "env_name" {
 #   description = "The Cluster certificate data"
 # }
 
-variable "oidc_provider_arn" {
-  description = "OIDC Provider ARN used for IRSA "
-  type        = string
-  sensitive   = true
-}
+# variable "oidc_provider_arn" {
+#   description = "OIDC Provider ARN used for IRSA "
+#   type        = string
+#   sensitive   = true
+# }
 
 ################################################################################
 # VPC Variables
@@ -72,12 +72,12 @@ variable "private_subnets" {
 # AWS SSO Variables
 ################################################################################
 
-variable "sso_admin_group_id" {
-  description = "AWS_SSO Admin Group ID"
-  type        = string
-  sensitive   = true
-  default     = "b4f8f4f8-e011-7046-0637-993dc10edd76"
-}
+# variable "sso_admin_group_id" {
+#   description = "AWS_SSO Admin Group ID"
+#   type        = string
+#   sensitive   = true
+#   default     = "b4f8f4f8-e011-7046-0637-993dc10edd76"
+# }
 
 variable "ami_id" {
   description = "The AMI ID for the instances"
