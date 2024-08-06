@@ -18,19 +18,19 @@ variable "cluster_name" {
   default = "dominion-cluster"
 }
 
-variable "rolearn" {
-  description = "Add admin role to the aws-auth configmap"
-  default     = "arn:aws:iam::322266404742:role/terraform-create-role"
-}
+# variable "rolearn" {
+#   description = "Add admin role to the aws-auth configmap"
+#   default     = "arn:aws:iam::322266404742:role/terraform-create-role"
+# }
 
 ################################################################################
 # ALB Controller Variables
 ################################################################################
 
-variable "env_name" {
-  type    = string
-  default = "dev"
-}
+# variable "env_name" {
+#   type    = string
+#   default = "dev"
+# }
 
 ################################################################################
 # EKS Cluster Variables for grafana and prometheus deployment
@@ -58,15 +58,15 @@ variable "env_name" {
 # VPC Variables
 ################################################################################
 
-variable "vpc_id" {
-  description = "VPC ID which Load balancers will be  deployed in"
-  type        = string
-}
+# variable "vpc_id" {
+#   description = "VPC ID which Load balancers will be  deployed in"
+#   type        = string
+# }
 
-variable "private_subnets" {
-  description = "A list of private subnets"
-  type        = list(string)
-}
+# variable "private_subnets" {
+#   description = "A list of private subnets"
+#   type        = list(string)
+# }
 
 ################################################################################
 # AWS SSO Variables

@@ -11,14 +11,14 @@ module "vpc" {
 # EKS Cluster Module
 ################################################################################
 
-module "eks" {
-  source = "./modules/eks-cluster"
+# module "eks" {
+#   source = "./modules/eks-cluster"
 
-  rolearn = var.rolearn
+#   rolearn = var.rolearn
 
-  vpc_id          = module.vpc.vpc_id
-  private_subnets = module.vpc.private_subnets
-}
+#   vpc_id          = module.vpc.vpc_id
+#   private_subnets = module.vpc.private_subnets
+# }
 
 ################################################################################
 # AWS ALB Controller
