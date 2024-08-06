@@ -36,17 +36,17 @@ variable "env_name" {
 # EKS Cluster Variables for grafana and prometheus deployment
 ################################################################################
 
-variable "cluster_endpoint" {
-  type        = string
-  sensitive   = true
-  description = "The cluster endpoint"
-}
+# variable "cluster_endpoint" {
+#   type        = string
+#   sensitive   = true
+#   description = "The cluster endpoint"
+# }
 
-variable "cluster_certificate_authority_data" {
-  type        = string
-  sensitive   = true
-  description = "The Cluster certificate data"
-}
+# variable "cluster_certificate_authority_data" {
+#   type        = string
+#   sensitive   = true
+#   description = "The Cluster certificate data"
+# }
 
 variable "oidc_provider_arn" {
   description = "OIDC Provider ARN used for IRSA "
