@@ -46,7 +46,7 @@ pipeline {
                Let me know if the changes look okay.
                Thanks,
                Dominion System Technologies,
-              +1 (313) 413-1477''', cc: 'brandonard.business@gmail.com', from: '', replyTo: '', subject: 'Terraform Infra deployment completed!!!', to: 'fusisoft@gmail.com'
+              +1 (313) 413-1477''', cc: 'brandonard.business@gmail.com', from: '', replyTo: '', subject: 'Terraform Infra deployment completed!!!', to: 'brandonard.business@gmail.com'
                           
                }    
           }
