@@ -101,3 +101,13 @@ module "s3_dynamodb" {
   table  = var.dynamodb_table
   region = var.main-region
 }
+
+module "maven_sonarqube" {
+  source = "./modules/maven-sonarqube"
+  ami_id = var.ami_id_rh
+  instance_type = var.instance_type
+  key_name = var.key_name
+  db_name = var.db_name
+  db_username = var.db_username
+  db_password = var.db_password
+}

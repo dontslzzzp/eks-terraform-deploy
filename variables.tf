@@ -85,6 +85,12 @@ variable "ami_id" {
   default     = "ami-03c983f9003cb9cd1"
 }
 
+variable "ami_id_rh" {
+  description = "The AMI ID for the instances"
+  type        = string
+  default     = "ami-0423fca164888b941"
+}
+
 variable "instance_type" {
   description = "The instance type for the instances"
   type        = string
@@ -108,4 +114,22 @@ variable "dynamodb_table" {
   description = "The name of the DynamoDB table for state locking"
   type        = string
   default     = "terraform-state-locking"
+}
+
+variable "db_name" {
+  description = "The name of the DynamoDB table for state locking"
+  type        = string
+  default     = "Maven-Sonarqube"
+}
+
+variable "db_username" {
+  description = "The name of the DynamoDB table for state locking"
+  type        = string
+  default     = "admin"
+}
+
+variable "db_password" {
+  description = "The name of the DynamoDB table for state locking"
+  type        = string
+  default     = "admin"
 }
