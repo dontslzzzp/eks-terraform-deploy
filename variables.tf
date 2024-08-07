@@ -119,7 +119,7 @@ variable "dynamodb_table" {
 variable "db_name" {
   description = "The name of the DynamoDB table for state locking"
   type        = string
-  default     = "Maven-Sonarqube"
+  default     = "Sonarqube"
 }
 
 variable "db_username" {
