@@ -125,7 +125,7 @@ variable "db_name" {
 variable "db_username" {
   description = "The name of the DynamoDB table for state locking"
   type        = string
-  default     = "admin"
+  default     = "BandzzZ"
 }
 
 variable "db_password" {
