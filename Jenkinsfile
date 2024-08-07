@@ -27,9 +27,14 @@ pipeline {
                     choice (name: 'Manual_Approval', choices: ['Approve','Reject'], description: 'Approve or Reject the deployment')
                 }
             }
-             steps {
-                echo "Deployment ${Manual_Approval}"
-            }          
+            steps {
+                echo "Deployment ${params.Manual_Approval}"
+                script {
+                    if (params.Manual_Approval == 'Reject') {
+                        error("Deployment was rejected")
+                    }
+                }
+            }         
         }
         stage('4.Terraform Deploy') {              
             steps { 

@@ -98,14 +98,14 @@ variable "key_name" {
   default     = "DevOps_key"
 }
 
-# variable "s3_bucket" {
-#   description = "The name of the S3 bucket for storing Terraform state"
-#   type        = string
-#   default     = "bandzzz-terraform-backend-bucket-us-west-2"
-# }
+variable "s3_bucket" {
+  description = "The name of the S3 bucket for storing Terraform state"
+  type        = string
+  default     = "bandzzz-terraform-backend-bucket-us-west-2"
+}
 
-# variable "dynamodb_table" {
-#   description = "The name of the DynamoDB table for state locking"
-#   type        = string
-#   default     = "terraform-state-locking"
-# }
+variable "dynamodb_table" {
+  description = "The name of the DynamoDB table for state locking"
+  type        = string
+  default     = "terraform-state-locking"
+}
